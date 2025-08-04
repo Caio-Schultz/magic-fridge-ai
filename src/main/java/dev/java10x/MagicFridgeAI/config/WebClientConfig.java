@@ -16,7 +16,7 @@ public class WebClientConfig {
     // WebClient vai ajudar a conectar com a Web usando a url do chat gpt e integrando (build) com a chave da API
     @Bean
     public WebClient webClient(WebClient.Builder builder){
-        return builder.baseUrl(chatGptApiUrl);
+        return builder.baseUrl(chatGptApiUrl).build();
     }
 
 
